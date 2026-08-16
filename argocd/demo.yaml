@@ -9,9 +9,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR-USER/argo-lab.git
+    repoURL: https://github.com/t-sterling/argo-lab.git
     targetRevision: HEAD
-    path: applications/demo
+    path: applications
 
   destination:
     server: https://kubernetes.default.svc
