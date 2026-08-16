@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+data:
+  application.yaml: |
+    environment: dev
+    featureFlags:
+      enableNewParser: true
+      enableCaching: false
+    kafka:
+      topic: mdp.demo.events
+      consumerGroup: demo-consumer
+    database:
+      schema: demo
+      timeoutSeconds: 30
